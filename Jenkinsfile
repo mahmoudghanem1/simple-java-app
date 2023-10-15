@@ -6,7 +6,7 @@ pipeline{
         stage('build'){
             steps{
                 script{
-                    echo "build in progres"
+                    echo "build in progress"
                 }
             }
         }
