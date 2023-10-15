@@ -1,6 +1,21 @@
-node{
-    git branch: 'main', url: 'https://github.com/DinaGamalMahmoud/simple-java-app.git'
-    stage('build'){
-            sh'echo "build in progress"'
+pipeline{
+    agent any
+
+
+    stages{
+        stage('build'){
+            steps{
+                script{
+                    echo "build in progress"
+                }
+            }
+        }
+        stage('test'){
+            steps{
+                script{
+                    echo "test in progress "
+                }
+            }
+        }
     }
 }
