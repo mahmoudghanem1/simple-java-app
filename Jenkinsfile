@@ -11,11 +11,11 @@ pipeline{
       }
     }
   }
-post {
-  success {
-    slackSend channel: '#devops', message: '"started ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"', teamDomain: 'mahmoud-ghanem', tokenCredentialId: 'slack-notif'
-  }
-} 
+// post {
+//   success {
+//     slackSend channel: '#devops', message: '"started ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"', teamDomain: 'mahmoud-ghanem', tokenCredentialId: 'slack-notif'
+//   }
+// } 
 post {
   failure {
     slackSend channel: '#devops', message: '"failed ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"', teamDomain: 'mahmoud-ghanem', tokenCredentialId: 'slack-notif'
