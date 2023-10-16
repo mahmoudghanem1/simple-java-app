@@ -20,7 +20,7 @@ post {
 slackSend channel: '#devops', message: '"started ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"', teamDomain: 'mahmoud-ghanem', tokenCredentialId: 'slack-notif'
 }
 
-
+}
 
 }
 
