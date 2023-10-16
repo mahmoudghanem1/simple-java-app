@@ -24,3 +24,4 @@ slackSend channel: '#devops', message: '"started ${env.JOB_NAME} ${env.BUILD_NUM
 
 }
 
+}
