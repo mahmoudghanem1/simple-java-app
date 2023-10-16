@@ -18,7 +18,7 @@ post {
 } 
 post {
   failure {
-    slackSend channel: '#devops', message: '"failure ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"', teamDomain: 'mahmoud-ghanem', tokenCredentialId: 'slack-notif'
+    slackSend channel: '#devops', message: '"failed ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"', teamDomain: 'mahmoud-ghanem', tokenCredentialId: 'slack-notif'
   }
 }
 
